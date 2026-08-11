@@ -10,7 +10,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./css/styles.css"/>
 </head>
@@ -36,28 +36,18 @@
 
         <!-- Header -->
         <header>
-          <div>
+          <div class="header-left">
             <h1 class="name">{{ c.header.name }}</h1>
             <div class="role">{{ c.header.role }}</div>
           </div>
           <div class="contact">
-            <span><b>{{ c.header.contact.telLabel }}</b>
-              <a :href="c.header.contact.whatsapp" target="_blank" rel="noopener">{{ c.header.contact.phone }}</a>
-            </span>
-            <span><a :href="'mailto:' + c.header.contact.email">{{ c.header.contact.email }}</a></span>
-            <span><a :href="c.header.contact.linkedinUrl" target="_blank" rel="noopener">{{ c.header.contact.linkedin }}</a></span>
-            <span><a :href="c.header.contact.githubUrl" target="_blank" rel="noopener">{{ c.header.contact.github }}</a></span>
-            <span>{{ c.header.contact.country }}</span>
+            <div><b>{{ c.header.contact.telLabel }}</b><a :href="c.header.contact.whatsapp" target="_blank" rel="noopener">{{ c.header.contact.phone }}</a></div>
+            <div><a :href="'mailto:' + c.header.contact.email">{{ c.header.contact.email }}</a></div>
+            <div><a :href="c.header.contact.linkedinUrl" target="_blank" rel="noopener">{{ c.header.contact.linkedin }}</a></div>
+            <div><a :href="c.header.contact.githubUrl" target="_blank" rel="noopener">{{ c.header.contact.github }}</a></div>
+            <div>{{ c.header.contact.country }}</div>
           </div>
         </header>
-
-        <!-- Highlights -->
-        <div class="highlights">
-          <div class="hl" v-for="(h, i) in c.highlights" :key="i">
-            <span class="num">{{ h.num }}</span>
-            <span class="lbl">{{ h.lbl }}</span>
-          </div>
-        </div>
 
         <!-- Perfil -->
         <section>
