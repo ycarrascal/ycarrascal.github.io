@@ -1,0 +1,133 @@
+{
+  "meta": { "toggleLabel": "EN / ES", "lang": "es" },
+  "ui": {
+    "downloadPdf": "⬇ Descargar PDF",
+    "generatingPdf": "Generando PDF…",
+    "downloadPng": "🖼 Descargar PNG",
+    "generatingPng": "Generando PNG…"
+  },
+  "header": {
+    "name": "Yorman Carrascal Rojas",
+    "role": "Senior Software Engineer & Tech Lead · .NET · Angular · Azure · AI-Driven Development",
+    "contact": {
+      "telLabel": "Tel: ",
+      "phone": "+57 318 656 5639",
+      "whatsapp": "https://wa.me/573186565639",
+      "whatsappAria": "WhatsApp",
+      "email": "ycarrascalro@gmail.com",
+      "linkedin": "linkedin.com/in/yorman-carrascal-rojas",
+      "linkedinUrl": "https://linkedin.com/in/yorman-carrascal-rojas",
+      "github": "github.com/ycarrascal",
+      "githubUrl": "https://github.com/ycarrascal",
+      "country": "Ocaña, Colombia"
+    }
+  },
+  "highlights": [
+    { "num": "10+", "lbl": "años de experiencia" },
+    { "num": "25%", "lbl": "reducción latencia prod" },
+    { "num": "3", "lbl": "empresas tech lideradas" },
+    { "num": "∞", "lbl": "commits con propósito" }
+  ],
+  "sections": {
+    "profile": "Perfil Profesional",
+    "skills": "Stack Tecnológico",
+    "softSkills": "Habilidades Blandas",
+    "experience": "Experiencia Profesional",
+    "projects": "Proyectos Destacados",
+    "education": "Educación",
+    "courses": "Certificaciones",
+    "languages": "Idiomas"
+  },
+  "profile": "Ingeniero de Software Senior con más de <b>10 años de experiencia</b> diseñando y desarrollando soluciones empresariales a lo largo de todo el ciclo de vida del software. Actualmente <b>Tech Lead en FLYR</b>, liderando la evolución de sistemas distribuidos .NET para una plataforma de reservas de vuelos con millones de transacciones mensuales. Aplico prácticas de <b>AI-Driven Development</b> (LLMs, GitHub Copilot, MCP, Agentes IA) para acelerar la entrega, fortalecer la calidad del código y construir soluciones mantenibles, escalables y alineadas con objetivos de negocio.",
+  "skills": [
+    { "cat": "Backend", "val": ".NET / .NET Core, C#, Node.js, PHP (Laravel), Java" },
+    { "cat": "Frontend", "val": "Angular, TypeScript, Vue.js, Ionic" },
+    { "cat": "Cloud & DevOps", "val": "Azure, Docker, Kubernetes, Azure DevOps, GitHub Actions, CI/CD" },
+    { "cat": "Bases de datos", "val": "SQL Server, PostgreSQL, MySQL, MongoDB" },
+    { "cat": "Observabilidad", "val": "Datadog, trazabilidad distribuida, dashboards producción" },
+    { "cat": "IA & Automatización", "val": "GitHub Copilot, LLMs (Claude, Gemini, ChatGPT), MCP, Agentes IA" },
+    { "cat": "Calidad", "val": "xUnit, Jasmine, JMeter, TDD, BDD, SDD" }
+  ],
+  "softSkills": "Liderazgo técnico · Mentoría · Resolución de problemas · Comunicación con stakeholders · Mejora continua · Trabajo remoto autónomo · Cultura DevOps",
+  "experience": {
+    "company": "FLYR",
+    "former": "(antes Newshore)",
+    "location": "Manizales / Remoto, Colombia",
+    "roles": [
+      {
+        "title": "Senior Software Engineer & Tech Lead",
+        "date": "Ene. 2026 – Presente",
+        "bullets": [
+          "Lideré diseño técnico y evolución de sistemas distribuidos de alta escala en .NET, aplicando TDD, BDD y SDD.",
+          "Integré flujos AI-Driven con LLMs (Gemini, Claude, ChatGPT), GitHub Copilot, Agentes IA y MCP para automatizar ciclos de desarrollo.",
+          "Diseñé tableros de observabilidad y trazabilidad en producción con Datadog, reduciendo el MTTR ante incidencias críticas.",
+          "Mentoreé ingenieros del equipo promoviendo Clean Architecture, SOLID y cultura de mejora continua."
+        ]
+      },
+      {
+        "title": "Software Engineer",
+        "date": "Ene. 2024 – Dic. 2025",
+        "bullets": [
+          "Diseñé e implementé APIs RESTful y microservicios modulares en .NET e interfaces dinámicas en Angular.",
+          "Reduje un 25% los tiempos de respuesta de microservicios en producción mediante profiling con JMeter y Postman.",
+          "Incrementé cobertura de código con pruebas automatizadas en xUnit (backend) y Jasmine (frontend).",
+          "Automaticé pipelines CI/CD en Azure DevOps, reduciendo errores manuales y acelerando entregas a QA y Producción."
+        ]
+      },
+      {
+        "title": "Software Engineer — Newshore (a FLYR company)",
+        "date": "Jun. 2023 – Dic. 2023",
+        "bullets": [
+          "Construí microservicios .NET con Clean Architecture y módulos Angular escalables.",
+          "Implementé estrategias de testing con xUnit y Jasmine, mitigando bugs críticos en producción.",
+          "Gestioné CI/CD en Azure DevOps bajo metodología Scrum."
+        ]
+      }
+    ]
+  },
+  "previousExperience": [
+    {
+      "company": "Iké Asistencia",
+      "role": "Junior Technical Lead",
+      "date": "Nov. 2019 – Jun. 2023",
+      "bullets": [
+        "Lideré arquitectura del ecosistema digital financiero con PHP Laravel + Angular.",
+        "Lideré implementación de Facturación Electrónica garantizando cumplimiento normativo.",
+        "Automaticé procesos contables clave, reduciendo tiempos de procesamiento manual."
+      ]
+    },
+    {
+      "company": "Don Bosco School",
+      "role": "Software Engineer",
+      "date": "Ene. 2015 – Dic. 2018",
+      "bullets": [
+        "Diseñé e implementé sistema de matrículas institucional y 6 portales web desde cero en PHP Laravel.",
+        "Diseñé estructura relacional para proteger información estudiantil."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "ycarrascal.github.io",
+      "role": "Autor",
+      "stack": "Vue 3 · Tailwind CSS · GitHub Pages",
+      "desc": "Este mismo sitio. CV web interactivo con exportación a PDF/PNG, generado con AI-Driven Development.",
+      "url": "https://github.com/ycarrascal/ycarrascal.github.io",
+      "link": "github.com/ycarrascal/ycarrascal.github.io"
+    }
+  ],
+  "education": [
+    { "title": "Ingeniería de Sistemas", "meta": "Universidad Francisco de Paula Santander (UFPSO) · 2018" },
+    { "title": "Diplomado en Entornos WAN", "meta": "UFPSO · 2018" },
+    { "title": "Diplomado en Entornos LAN", "meta": "UFPSO · 2017" }
+  ],
+  "courses": [
+    { "title": "IA para Developers", "meta": "MitoCode Network · 2026", "url": "#" },
+    { "title": "DevOps y Docker Kubernetes Microservice Azure — ASP .NET Core", "meta": "Udemy · 2024", "url": "#" },
+    { "title": "Arquitectura de Aplicaciones Empresariales con .NET 7", "meta": "Udemy · 2023", "url": "#" }
+  ],
+  "languages": [
+    { "k": "Español", "v": "Nativo" },
+    { "k": "Inglés", "v": "Elementary (A2)" }
+  ]
+}
