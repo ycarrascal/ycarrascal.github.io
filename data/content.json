@@ -1,10 +1,10 @@
-{
+﻿{
   "meta": { "toggleLabel": "EN / ES", "lang": "es" },
   "ui": {
-    "downloadPdf": "⬇ Descargar PDF",
-    "generatingPdf": "Generando PDF…",
-    "downloadPng": "🖼 Descargar PNG",
-    "generatingPng": "Generando PNG…"
+    "downloadPdf": "Descargar PDF",
+    "generatingPdf": "Generando PDF...",
+    "downloadPng": "Descargar PNG",
+    "generatingPng": "Generando PNG..."
   },
   "header": {
     "name": "Yorman Carrascal Rojas",
@@ -13,7 +13,6 @@
       "telLabel": "Tel: ",
       "phone": "+57 318 656 5639",
       "whatsapp": "https://wa.me/573186565639",
-      "whatsappAria": "WhatsApp",
       "email": "ycarrascalro@gmail.com",
       "linkedin": "linkedin.com/in/yorman-carrascal-rojas",
       "linkedinUrl": "https://linkedin.com/in/yorman-carrascal-rojas",
@@ -22,17 +21,10 @@
       "country": "Ocaña, Colombia"
     }
   },
-  "highlights": [
-    { "num": "10+", "lbl": "años de experiencia" },
-    { "num": "25%", "lbl": "reducción latencia prod" },
-    { "num": "3", "lbl": "empresas tech lideradas" },
-    { "num": "∞", "lbl": "commits con propósito" }
-  ],
   "sections": {
     "profile": "Perfil Profesional",
-    "skills": "Stack Tecnológico",
-    "softSkills": "Habilidades Blandas",
     "experience": "Experiencia Profesional",
+    "skills": "Stack Tecnológico",
     "achievements": "Logros Destacados",
     "education": "Educación",
     "courses": "Certificaciones",
@@ -40,15 +32,14 @@
   },
   "profile": "Ingeniero de Software Senior con más de 10 años de experiencia diseñando y desarrollando soluciones de software para entornos empresariales. Con experiencia en el diseño técnico e implementación de soluciones a lo largo de todo el ciclo de vida del software, desde el análisis y la arquitectura hasta el despliegue en entornos cloud. Aplico prácticas modernas de ingeniería de software y desarrollo potenciado por inteligencia artificial para acelerar la entrega, fortalecer la calidad del código y desarrollar soluciones mantenibles, escalables y alineadas con los objetivos del negocio.",
   "skills": [
-    { "cat": "Backend", "val": ".NET / .NET Core, C#, Node.js, PHP (Laravel), Java" },
-    { "cat": "Frontend", "val": "Angular, TypeScript, Vue.js, Ionic" },
-    { "cat": "Cloud & DevOps", "val": "Azure, Docker, Kubernetes, Azure DevOps, GitHub Actions, CI/CD" },
-    { "cat": "Bases de datos", "val": "SQL Server, PostgreSQL, MySQL, MongoDB" },
-    { "cat": "Observabilidad", "val": "Datadog, trazabilidad distribuida, dashboards producción" },
-    { "cat": "IA & Automatización", "val": "GitHub Copilot, LLMs (Claude, Gemini, ChatGPT), MCP, Agentes IA" },
-    { "cat": "Calidad", "val": "xUnit, Jasmine, JMeter, TDD, BDD, SDD" }
+    { "cat": "Backend",            "val": ".NET / .NET Core, C#, Node.js, PHP (Laravel), Java" },
+    { "cat": "Frontend",           "val": "Angular, TypeScript, Vue.js, Ionic" },
+    { "cat": "Cloud & DevOps",     "val": "Azure, Docker, Kubernetes, Azure DevOps, GitHub Actions, CI/CD" },
+    { "cat": "Bases de datos",     "val": "SQL Server, PostgreSQL, MySQL, MongoDB" },
+    { "cat": "Observabilidad",     "val": "Datadog, trazabilidad distribuida, dashboards producción" },
+    { "cat": "IA & Automatización","val": "GitHub Copilot, LLMs (Gemini, Claude, ChatGPT), MCP, Agentes IA" },
+    { "cat": "Calidad",            "val": "xUnit, Jasmine, JMeter, TDD, BDD" }
   ],
-  "softSkills": "Liderazgo técnico · Mentoría · Resolución de problemas · Comunicación con stakeholders · Mejora continua · Trabajo remoto autónomo · Cultura DevOps",
   "experience": {
     "company": "FLYR",
     "former": "(antes Newshore)",
@@ -125,15 +116,6 @@
     "Lideré la adopción de Facturación Electrónica (ventas y Documento Soporte) asegurando cumplimiento regulatorio en Iké Asistencia.",
     "Entregué 6 portales web institucionales y 2 sistemas core a medida desde cero en Don Bosco School."
   ],
-    {
-      "name": "ycarrascal.github.io",
-      "role": "Autor",
-      "stack": "Vue 3 · Tailwind CSS · GitHub Pages",
-      "desc": "Este mismo sitio. CV web interactivo con exportación a PDF/PNG, generado con AI-Driven Development.",
-      "url": "https://github.com/ycarrascal/ycarrascal.github.io",
-      "link": "github.com/ycarrascal/ycarrascal.github.io"
-    }
-  ],
   "education": [
     { "title": "Ingeniería de Sistemas", "meta": "Universidad Francisco de Paula Santander (UFPSO) · 2018" },
     { "title": "Diplomado en Entornos WAN", "meta": "UFPSO · 2018" },
@@ -141,7 +123,7 @@
   ],
   "courses": [
     { "title": "IA para Developers", "meta": "MitoCode Network · 2026", "url": "#" },
-    { "title": "DevOps y Docker Kubernetes Microservice Azure — ASP .NET Core", "meta": "Udemy · 2024", "url": "#" },
+    { "title": "DevOps y Docker Kubernetes Microservice Azure – ASP .NET Core", "meta": "Udemy · 2024", "url": "#" },
     { "title": "Arquitectura de Aplicaciones Empresariales con .NET 7", "meta": "Udemy · 2023", "url": "#" }
   ],
   "languages": [
