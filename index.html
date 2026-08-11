@@ -102,20 +102,6 @@
           </div>
         </section>
 
-        <!-- Proyectos -->
-        <section>
-          <h2 class="section-title">{{ c.sections.projects }}</h2>
-          <div class="proj-item" v-for="(p, i) in c.projects" :key="i">
-            <div class="proj-head">
-              <h3 class="proj-name">{{ p.name }}</h3>
-              <span class="proj-role">{{ p.role }}</span>
-            </div>
-            <div class="proj-stack">{{ p.stack }}</div>
-            <p class="proj-desc">{{ p.desc }}</p>
-            <a class="proj-link" :href="p.url" target="_blank" rel="noopener">{{ p.link }}</a>
-          </div>
-        </section>
-
         <!-- Educación -->
         <section>
           <h2 class="section-title">{{ c.sections.education }}</h2>
