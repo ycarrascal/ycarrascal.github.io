@@ -55,21 +55,6 @@
           <p class="summary" v-html="c.profile"></p>
         </section>
 
-        <!-- Stack -->
-        <section>
-          <h2 class="section-title">{{ c.sections.skills }}</h2>
-          <div class="skill-row" v-for="(s, i) in c.skills" :key="i">
-            <span class="skill-cat">{{ s.cat }}</span>
-            <span class="skill-val">{{ s.val }}</span>
-          </div>
-        </section>
-
-        <!-- Soft skills -->
-        <section>
-          <h2 class="section-title">{{ c.sections.softSkills }}</h2>
-          <p class="softskills">{{ c.softSkills }}</p>
-        </section>
-
         <!-- Experiencia principal -->
         <section>
           <h2 class="section-title">{{ c.sections.experience }}</h2>
@@ -100,6 +85,21 @@
               </ul>
             </div>
           </div>
+        </section>
+
+        <!-- Stack -->
+        <section>
+          <h2 class="section-title">{{ c.sections.skills }}</h2>
+          <div class="skill-row" v-for="(s, i) in c.skills" :key="i">
+            <span class="skill-cat">{{ s.cat }}</span>
+            <span class="skill-val">{{ s.val }}</span>
+          </div>
+        </section>
+
+        <!-- Soft skills -->
+        <section>
+          <h2 class="section-title">{{ c.sections.softSkills }}</h2>
+          <p class="softskills">{{ c.softSkills }}</p>
         </section>
 
         <!-- Educación -->
