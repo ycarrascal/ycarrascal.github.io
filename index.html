@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yorman Carrascal Rojas — Senior Software Engineer & Tech Lead (.NET, Angular, Azure)</title>
+  <meta name="author" content="Yorman Carrascal Rojas"/>
+  <meta name="description" content="Senior Software Engineer & Tech Lead con 10+ años de experiencia. .NET, Angular, Azure, Docker, Kubernetes, Datadog, AI-Driven Development, GitHub Copilot, MCP. Colombia."/>
+  <meta name="keywords" content="Software Engineer, Tech Lead, .NET, C#, Angular, TypeScript, Azure, Docker, Kubernetes, Datadog, CI/CD, Azure DevOps, GitHub Actions, xUnit, Jasmine, JMeter, TDD, BDD, LLMs, GitHub Copilot, MCP, Colombia"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/styles.css"/>
+</head>
+<body>
+  <div id="app" v-cloak>
+    <div v-if="loadError" class="mx-auto mt-16 max-w-xl rounded-lg border border-red-200 bg-red-50 p-6 text-center text-sm text-red-700">
+      No se pudo cargar <b>data/content.json</b>. Abre con un servidor local (ej: Live Server en VS Code).
+    </div>
+
+    <template v-else-if="c">
+      <!-- Barra de acciones -->
+      <div class="print-bar no-print">
+        <button type="button" class="secondary" :disabled="generatingPng" @click="downloadPng">
+          {{ generatingPng ? c.ui.generatingPng : c.ui.downloadPng }}
+        </button>
+        <button type="button" :disabled="generatingPdf" @click="downloadPdf">
+          {{ generatingPdf ? c.ui.generatingPdf : c.ui.downloadPdf }}
+        </button>
+      </div>
+
+      <!-- Hoja CV -->
+      <div class="sheet" ref="sheet">
+
+        <!-- Header -->
+        <header>
+          <div>
+            <h1 class="name">{{ c.header.name }}</h1>
+            <div class="role">{{ c.header.role }}</div>
+          </div>
+          <div class="contact">
+            <span><b>{{ c.header.contact.telLabel }}</b>
+              <a :href="c.header.contact.whatsapp" target="_blank" rel="noopener">{{ c.header.contact.phone }}</a>
+            </span>
+            <span><a :href="'mailto:' + c.header.contact.email">{{ c.header.contact.email }}</a></span>
+            <span><a :href="c.header.contact.linkedinUrl" target="_blank" rel="noopener">{{ c.header.contact.linkedin }}</a></span>
+            <span><a :href="c.header.contact.githubUrl" target="_blank" rel="noopener">{{ c.header.contact.github }}</a></span>
+            <span>{{ c.header.contact.country }}</span>
+          </div>
+        </header>
+
+        <!-- Highlights -->
+        <div class="highlights">
+          <div class="hl" v-for="(h, i) in c.highlights" :key="i">
+            <span class="num">{{ h.num }}</span>
+            <span class="lbl">{{ h.lbl }}</span>
+          </div>
+        </div>
+
+        <!-- Perfil -->
+        <section>
+          <h2 class="section-title">{{ c.sections.profile }}</h2>
+          <p class="summary" v-html="c.profile"></p>
+        </section>
+
+        <!-- Stack -->
+        <section>
+          <h2 class="section-title">{{ c.sections.skills }}</h2>
+          <div class="skill-row" v-for="(s, i) in c.skills" :key="i">
+            <span class="skill-cat">{{ s.cat }}</span>
+            <span class="skill-val">{{ s.val }}</span>
+          </div>
+        </section>
+
+        <!-- Soft skills -->
+        <section>
+          <h2 class="section-title">{{ c.sections.softSkills }}</h2>
+          <p class="softskills">{{ c.softSkills }}</p>
+        </section>
+
+        <!-- Experiencia principal -->
+        <section>
+          <h2 class="section-title">{{ c.sections.experience }}</h2>
+          <div class="company">
+            <span class="company-name">{{ c.experience.company }} <span class="company-former">{{ c.experience.former }}</span></span>
+            <span class="company-meta">{{ c.experience.location }}</span>
+          </div>
+          <div class="exp-item" v-for="(role, i) in c.experience.roles" :key="i">
+            <div class="exp-head">
+              <h3 class="exp-role">{{ role.title }}</h3>
+              <span class="exp-date">{{ role.date }}</span>
+            </div>
+            <ul class="bullets">
+              <li v-for="(b, j) in role.bullets" :key="j">{{ b }}</li>
+            </ul>
+          </div>
+
+          <!-- Experiencia previa (compacta) -->
+          <div class="prev-exp">
+            <div class="prev-item" v-for="(p, i) in c.previousExperience" :key="i">
+              <div class="prev-head">
+                <span class="prev-company">{{ p.company }}</span>
+                <span class="prev-date">{{ p.date }}</span>
+              </div>
+              <div class="prev-role-lbl">{{ p.role }}</div>
+              <ul class="bullets">
+                <li v-for="(b, j) in p.bullets" :key="j">{{ b }}</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section>
+          <h2 class="section-title">{{ c.sections.projects }}</h2>
+          <div class="proj-item" v-for="(p, i) in c.projects" :key="i">
+            <div class="proj-head">
+              <h3 class="proj-name">{{ p.name }}</h3>
+              <span class="proj-role">{{ p.role }}</span>
+            </div>
+            <div class="proj-stack">{{ p.stack }}</div>
+            <p class="proj-desc">{{ p.desc }}</p>
+            <a class="proj-link" :href="p.url" target="_blank" rel="noopener">{{ p.link }}</a>
+          </div>
+        </section>
+
+        <!-- Educación -->
+        <section>
+          <h2 class="section-title">{{ c.sections.education }}</h2>
+          <div class="edu-item" v-for="(e, i) in c.education" :key="i">
+            <div class="edu-title">{{ e.title }}</div>
+            <div class="edu-meta">{{ e.meta }}</div>
+          </div>
+        </section>
+
+        <!-- Certificaciones -->
+        <section>
+          <h2 class="section-title">{{ c.sections.courses }}</h2>
+          <div class="edu-item" v-for="(course, i) in c.courses" :key="i">
+            <div class="edu-title">
+              <a :href="course.url" target="_blank" rel="noopener">{{ course.title }}</a>
+            </div>
+            <div class="edu-meta">{{ course.meta }}</div>
+          </div>
+        </section>
+
+        <!-- Idiomas -->
+        <section>
+          <h2 class="section-title">{{ c.sections.languages }}</h2>
+          <div class="inline-row" v-for="(l, i) in c.languages" :key="i">
+            <span class="k">{{ l.k }}</span>
+            <span class="v">{{ l.v }}</span>
+          </div>
+        </section>
+
+      </div>
+    </template>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    const { createApp, ref, onMounted } = Vue;
+    createApp({
+      setup() {
+        const c = ref(null);
+        const loadError = ref(false);
+        const generatingPdf = ref(false);
+        const generatingPng = ref(false);
+        const sheet = ref(null);
+
+        onMounted(async () => {
+          try {
+            const res = await fetch('./data/content.json');
+            if (!res.ok) throw new Error('fetch failed');
+            c.value = await res.json();
+          } catch {
+            loadError.value = true;
+          }
+        });
+
+        async function downloadPdf() {
+          generatingPdf.value = true;
+          await Vue.nextTick();
+          const canvas = await html2canvas(sheet.value, { scale: 2, useCORS: true });
+          const imgData = canvas.toDataURL('image/png');
+          const { jsPDF } = window.jspdf;
+          const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+          const w = pdf.internal.pageSize.getWidth();
+          const h = (canvas.height * w) / canvas.width;
+          pdf.addImage(imgData, 'PNG', 0, 0, w, h);
+          pdf.save('yorman-carrascal-cv.pdf');
+          generatingPdf.value = false;
+        }
+
+        async function downloadPng() {
+          generatingPng.value = true;
+          await Vue.nextTick();
+          const canvas = await html2canvas(sheet.value, { scale: 2, useCORS: true });
+          const link = document.createElement('a');
+          link.download = 'yorman-carrascal-cv.png';
+          link.href = canvas.toDataURL('image/png');
+          link.click();
+          generatingPng.value = false;
+        }
+
+        return { c, loadError, generatingPdf, generatingPng, sheet, downloadPdf, downloadPng };
+      }
+    }).mount('#app');
+  </script>
+</body>
+</html>
