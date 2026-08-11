@@ -33,12 +33,12 @@
     "skills": "Stack Tecnológico",
     "softSkills": "Habilidades Blandas",
     "experience": "Experiencia Profesional",
-    "projects": "Proyectos Destacados",
+    "achievements": "Logros Destacados",
     "education": "Educación",
     "courses": "Certificaciones",
     "languages": "Idiomas"
   },
-  "profile": "Ingeniero de Software Senior con más de <b>10 años de experiencia</b> diseñando y desarrollando soluciones empresariales a lo largo de todo el ciclo de vida del software. Actualmente <b>Tech Lead en FLYR</b>, liderando la evolución de sistemas distribuidos .NET para una plataforma de reservas de vuelos con millones de transacciones mensuales. Aplico prácticas de <b>AI-Driven Development</b> (LLMs, GitHub Copilot, MCP, Agentes IA) para acelerar la entrega, fortalecer la calidad del código y construir soluciones mantenibles, escalables y alineadas con objetivos de negocio.",
+  "profile": "Ingeniero de Software Senior con más de 10 años de experiencia diseñando y desarrollando soluciones de software para entornos empresariales. Con experiencia en el diseño técnico e implementación de soluciones a lo largo de todo el ciclo de vida del software, desde el análisis y la arquitectura hasta el despliegue en entornos cloud. Aplico prácticas modernas de ingeniería de software y desarrollo potenciado por inteligencia artificial para acelerar la entrega, fortalecer la calidad del código y desarrollar soluciones mantenibles, escalables y alineadas con los objetivos del negocio.",
   "skills": [
     { "cat": "Backend", "val": ".NET / .NET Core, C#, Node.js, PHP (Laravel), Java" },
     { "cat": "Frontend", "val": "Angular, TypeScript, Vue.js, Ionic" },
@@ -58,29 +58,29 @@
         "title": "Senior Software Engineer & Tech Lead",
         "date": "Ene. 2026 – Presente",
         "bullets": [
-          "Lideré diseño técnico y evolución de sistemas distribuidos de alta escala en .NET, aplicando TDD, BDD y SDD.",
-          "Integré flujos AI-Driven con LLMs (Gemini, Claude, ChatGPT), GitHub Copilot, Agentes IA y MCP para automatizar ciclos de desarrollo.",
-          "Diseñé tableros de observabilidad y trazabilidad en producción con Datadog, reduciendo el MTTR ante incidencias críticas.",
-          "Mentoreé ingenieros del equipo promoviendo Clean Architecture, SOLID y cultura de mejora continua."
+          "Arquitectura & Microservicios: Lideré el diseño técnico y evolución de sistemas distribuidos de alta escala en .NET, aplicando TDD, BDD y SDD para garantizar resiliencia y alineación con objetivos de negocio.",
+          "AI-Driven Development: Integré flujos con LLMs (Gemini, Claude, ChatGPT), GitHub Copilot, Agentes IA y MCP para automatizar ciclos de desarrollo y maximizar la productividad del equipo.",
+          "Observabilidad: Diseñé e implementé tableros de monitoreo y trazabilidad en producción con Datadog, reduciendo el MTTR ante incidencias críticas.",
+          "Liderazgo Técnico: Promoví Clean Architecture y SOLID, conduje revisiones de código rigurosas y mentoreé ingenieros del equipo bajo cultura de mejora continua."
         ]
       },
       {
         "title": "Software Engineer",
         "date": "Ene. 2024 – Dic. 2025",
         "bullets": [
-          "Diseñé e implementé APIs RESTful y microservicios modulares en .NET e interfaces dinámicas en Angular.",
-          "Reduje un 25% los tiempos de respuesta de microservicios en producción mediante profiling con JMeter y Postman.",
-          "Incrementé cobertura de código con pruebas automatizadas en xUnit (backend) y Jasmine (frontend).",
-          "Automaticé pipelines CI/CD en Azure DevOps, reduciendo errores manuales y acelerando entregas a QA y Producción."
+          "Backend & Frontend: Diseñé e implementé APIs RESTful y microservicios modulares en .NET e interfaces dinámicas en Angular, mejorando mantenibilidad y UX.",
+          "Rendimiento: Mitigué cuellos de botella con JMeter y Postman, logrando reducción del 25% en tiempos de respuesta de microservicios en producción.",
+          "Calidad: Incrementé cobertura de código y reduje fallas productivas con pruebas automatizadas en xUnit (backend) y Jasmine (frontend).",
+          "CI/CD: Automaticé pipelines de integración y despliegue en Azure DevOps, reduciendo errores manuales y acelerando la entrega a QA y Producción."
         ]
       },
       {
         "title": "Software Engineer — Newshore (a FLYR company)",
         "date": "Jun. 2023 – Dic. 2023",
         "bullets": [
-          "Construí microservicios .NET con Clean Architecture y módulos Angular escalables.",
-          "Implementé estrategias de testing con xUnit y Jasmine, mitigando bugs críticos en producción.",
-          "Gestioné CI/CD en Azure DevOps bajo metodología Scrum."
+          "Arquitectura Clean & SOLID: Diseñé y construí microservicios robustos en .NET y módulos interactivos en Angular, asegurando arquitectura modular y escalable.",
+          "Testing: Implementé estrategias de testing automatizado con xUnit y Jasmine, mitigando bugs críticos en producción.",
+          "Integración Continua: Gestioné control de versiones en Git y pipelines CI/CD en Azure DevOps bajo metodología Scrum."
         ]
       }
     ]
@@ -91,9 +91,20 @@
       "role": "Junior Technical Lead",
       "date": "Nov. 2019 – Jun. 2023",
       "bullets": [
-        "Lideré arquitectura del ecosistema digital financiero con PHP Laravel + Angular.",
-        "Lideré implementación de Facturación Electrónica garantizando cumplimiento normativo.",
-        "Automaticé procesos contables clave, reduciendo tiempos de procesamiento manual."
+        "Liderazgo Técnico: Lideré diseño técnico y arquitectura del ecosistema digital financiero, articulando requerimientos con stakeholders clave para optimizar operaciones.",
+        "Backend & Frontend: Construí APIs RESTful y SOAP en PHP (Laravel) y módulos web en Angular, integrando el ERP interno con portales de proveedores y plataformas financieras.",
+        "Facturación Electrónica: Lideré la implementación de Facturación Electrónica de ventas y Documento Soporte, garantizando cumplimiento normativo e integraciones críticas.",
+        "Automatización: Automaticé procesos contables clave, reduciendo tiempos de procesamiento manual; gestioné estrategia de despliegues en QA y Producción garantizando alta disponibilidad."
+      ]
+    },
+    {
+      "company": "Dialogo",
+      "role": "Software Engineer",
+      "date": "Mar. 2019 – Nov. 2019",
+      "bullets": [
+        "Evolución de CRM: Desarrollé módulos críticos en CRM interno: subsistemas de carga masiva de datos y generación de reportes analíticos para toma de decisiones estratégicas.",
+        "Bases de Datos e Integraciones: Optimicé esquemas relacionales para alta integridad y rendimiento de consultas; integré el CRM con APIs externas de negocio.",
+        "Soporte Productivo: Coordiné despliegues a QA y Producción, depuré incidencias y garanticé estabilidad operativa."
       ]
     },
     {
@@ -101,12 +112,19 @@
       "role": "Software Engineer",
       "date": "Ene. 2015 – Dic. 2018",
       "bullets": [
-        "Diseñé e implementé sistema de matrículas institucional y 6 portales web desde cero en PHP Laravel.",
-        "Diseñé estructura relacional para proteger información estudiantil."
+        "Sistemas Core: Diseñé e implementé desde cero el sistema de matrículas institucional y la plataforma de administración de la Feria del Libro de Ocaña en PHP (Laravel).",
+        "Portales Web: Lideré creación, despliegue y mantenimiento de 6 portales web institucionales con validaciones robustas cliente/servidor y arquitectura limpia.",
+        "Bases de Datos & QA: Diseñé estructura relacional para proteger información estudiantil y ejecuté pruebas exhaustivas de calidad para garantizar estabilidad de sistemas."
       ]
     }
   ],
-  "projects": [
+  "achievements": [
+    "Lideré la evolución de arquitectura distribuida .NET para sistema de reservas de vuelos con millones de transacciones mensuales en FLYR.",
+    "Reduje un 25% los tiempos de respuesta de microservicios en producción mediante pruebas de rendimiento con JMeter.",
+    "Implementé flujos AI-Driven (LLMs + MCP + GitHub Copilot) que aceleraron la velocidad de entrega del equipo.",
+    "Lideré la adopción de Facturación Electrónica (ventas y Documento Soporte) asegurando cumplimiento regulatorio en Iké Asistencia.",
+    "Entregué 6 portales web institucionales y 2 sistemas core a medida desde cero en Don Bosco School."
+  ],
     {
       "name": "ycarrascal.github.io",
       "role": "Autor",
