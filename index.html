@@ -68,7 +68,12 @@
               <span class="exp-date">{{ role.date }}</span>
             </div>
             <ul class="bullets">
-              <li v-for="(b, j) in role.bullets" :key="j">{{ b }}</li>
+              <li v-for="(b, j) in role.bullets" :key="j">
+                <template v-if="b.includes(':')">
+                  <b>{{ b.substring(0, b.indexOf(':')) }}:</b>{{ b.substring(b.indexOf(':') + 1) }}
+                </template>
+                <template v-else>{{ b }}</template>
+              </li>
             </ul>
           </div>
 
@@ -81,7 +86,12 @@
               </div>
               <div class="prev-role-lbl">{{ p.role }}</div>
               <ul class="bullets">
-                <li v-for="(b, j) in p.bullets" :key="j">{{ b }}</li>
+                <li v-for="(b, j) in p.bullets" :key="j">
+                <template v-if="b.includes(':')">
+                  <b>{{ b.substring(0, b.indexOf(':')) }}:</b>{{ b.substring(b.indexOf(':') + 1) }}
+                </template>
+                <template v-else>{{ b }}</template>
+              </li>
               </ul>
             </div>
           </div>
@@ -96,10 +106,12 @@
           </div>
         </section>
 
-        <!-- Soft skills -->
+        <!-- Logros -->
         <section>
-          <h2 class="section-title">{{ c.sections.softSkills }}</h2>
-          <p class="softskills">{{ c.softSkills }}</p>
+          <h2 class="section-title">{{ c.sections.achievements }}</h2>
+          <ul class="bullets">
+            <li v-for="(a, i) in c.achievements" :key="i">{{ a }}</li>
+          </ul>
         </section>
 
         <!-- Educación -->
