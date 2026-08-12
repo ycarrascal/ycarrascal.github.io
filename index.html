@@ -76,14 +76,19 @@
           <!-- Experiencia previa (compacta) -->
           <div class="prev-exp">
             <div class="prev-item" v-for="(p, i) in c.previousExperience" :key="i">
-              <div class="prev-head">
-                <span class="prev-company">{{ p.company }}</span>
-                <span class="prev-date">{{ p.date }}</span>
+              <div class="company">
+                <span class="company-name">{{ p.company }}</span>
+                <span class="company-meta">{{ p.location }}</span>
               </div>
-              <div class="prev-role-lbl">{{ p.role }}</div>
-              <ul class="bullets">
-                <li v-for="(b, j) in p.bullets" :key="j">{{ b }}</li>
-              </ul>
+              <div class="exp-item">
+                <div class="exp-head">
+                  <span class="exp-role">{{ p.role }}</span>
+                  <span class="exp-date">{{ p.date }}</span>
+                </div>
+                <ul class="bullets">
+                  <li v-for="(b, j) in p.bullets" :key="j">{{ b }}</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
