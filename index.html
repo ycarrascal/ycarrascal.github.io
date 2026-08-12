@@ -39,6 +39,7 @@
           <div class="header-left">
             <h1 class="name">{{ c.header.name }}</h1>
             <div class="role">{{ c.header.role }}</div>
+            <div class="tagline" v-if="c.header.tagline">{{ c.header.tagline }}</div>
           </div>
           <div class="contact">
             <div><b>{{ c.header.contact.telLabel }}</b><a :href="c.header.contact.whatsapp" target="_blank" rel="noopener">{{ c.header.contact.phone }}</a></div>
