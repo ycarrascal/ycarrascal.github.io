@@ -164,6 +164,10 @@
         async function downloadPdf() {
           generatingPdf.value = true;
           await Vue.nextTick();
+          const el = sheet.value.cloneNode(true);
+          el.style.margin = '0';
+          el.style.boxShadow = 'none';
+          document.body.appendChild(el);
           const opt = {
             margin: 0,
             filename: 'yorman-carrascal-cv.pdf',
@@ -172,7 +176,8 @@
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
             pagebreak: { mode: 'legacy' }
           };
-          await html2pdf().set(opt).from(sheet.value).save();
+          await html2pdf().set(opt).from(el).save();
+          document.body.removeChild(el);
           generatingPdf.value = false;
         }
 
