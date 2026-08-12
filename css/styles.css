@@ -114,9 +114,9 @@ section { margin-bottom: 16px; }
 .summary { font-size: 12px; color: #333; line-height: 1.7; }
 
 /* ── Skills ── */
-.skill-row { display: flex; gap: 8px; margin-bottom: 4px; font-size: 11.5px; }
-.skill-cat { font-weight: 700; color: #111; min-width: 145px; flex-shrink: 0; }
-.skill-val { color: #444; }
+.skills-grid { display: grid; grid-template-columns: 130px 1fr; gap: 3px 12px; font-size: 11.5px; }
+.skill-cat { font-weight: 600; color: #333; }
+.skill-val { color: #555; }
 
 /* ── Experience ── */
 .company { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
