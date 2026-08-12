@@ -91,9 +91,11 @@
         <!-- Stack -->
         <section>
           <h2 class="section-title">{{ c.sections.skills }}</h2>
-          <div class="skill-row" v-for="(s, i) in c.skills" :key="i">
-            <span class="skill-cat">{{ s.cat }}</span>
-            <span class="skill-val">{{ s.val }}</span>
+          <div class="skills-grid">
+            <template v-for="(s, i) in c.skills" :key="i">
+              <span class="skill-cat">{{ s.cat }}</span>
+              <span class="skill-val">{{ s.val }}</span>
+            </template>
           </div>
         </section>
 
