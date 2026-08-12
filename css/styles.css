@@ -177,8 +177,7 @@ section { margin-bottom: 16px; }
     padding: 10mm 12mm;
   }
   /* evita cortes dentro de bloques */
-  .exp-item, .prev-item, .edu-item, .prev-exp { page-break-inside: avoid; }
-  section { page-break-inside: avoid; }
+  .exp-item, .prev-item, .edu-item { page-break-inside: avoid; }
   li { page-break-inside: avoid; }
   /* links sin subrayado en impresión */
   a { text-decoration: none !important; }
