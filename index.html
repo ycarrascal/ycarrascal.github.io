@@ -68,12 +68,7 @@
               <span class="exp-date">{{ role.date }}</span>
             </div>
             <ul class="bullets">
-              <li v-for="(b, j) in role.bullets" :key="j">
-                <template v-if="b.includes(':')">
-                  <b>{{ b.substring(0, b.indexOf(':')) }}:</b>{{ b.substring(b.indexOf(':') + 1) }}
-                </template>
-                <template v-else>{{ b }}</template>
-              </li>
+              <li v-for="(b, j) in role.bullets" :key="j">{{ b }}</li>
             </ul>
           </div>
 
@@ -86,12 +81,7 @@
               </div>
               <div class="prev-role-lbl">{{ p.role }}</div>
               <ul class="bullets">
-                <li v-for="(b, j) in p.bullets" :key="j">
-                <template v-if="b.includes(':')">
-                  <b>{{ b.substring(0, b.indexOf(':')) }}:</b>{{ b.substring(b.indexOf(':') + 1) }}
-                </template>
-                <template v-else>{{ b }}</template>
-              </li>
+                <li v-for="(b, j) in p.bullets" :key="j">{{ b }}</li>
               </ul>
             </div>
           </div>
