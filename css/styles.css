@@ -169,7 +169,19 @@ section { margin-bottom: 16px; }
 @media print {
   body { background: #fff; }
   .no-print { display: none !important; }
-  .sheet { margin: 0; box-shadow: none; width: 100%; min-height: auto; }
+  .sheet {
+    margin: 0;
+    box-shadow: none;
+    width: 100%;
+    min-height: auto;
+    padding: 10mm 12mm;
+  }
+  /* evita cortes dentro de bloques */
+  .exp-item, .prev-item, .edu-item, .prev-exp { page-break-inside: avoid; }
+  section { page-break-inside: avoid; }
+  li { page-break-inside: avoid; }
+  /* links sin subrayado en impresión */
+  a { text-decoration: none !important; }
 }
 
 @media (prefers-reduced-motion: reduce) {
